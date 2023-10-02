@@ -464,3 +464,57 @@ img {
 .bottom-icon {
   fill: var(--color-bottom);
 }
+
+.bottom-paragraph {
+  margin-bottom: 16px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--color-hero);
+}
+
+.bottom-form {
+  display: flex;
+  gap: 24px;
+}
+
+.bottom-input {
+  width: 24px;
+  height: 40px;
+  border: 1px solid var(--color-hero);
+  background-color: transparent;
+  font-size: 12px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  color: var(--color-hero);
+}
+
+.placeholder {
+  color: var(--color-hero);
+}
+
+.bottom-button {
+  min-width: 165px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--color-hero);
+  cursor: pointer;
+  background-color: var(--color-logo);
+  border: none;
+  border-radius: 4px;
+}
+
+.svg-bottom {
+  margin-left: 16px;
+}
