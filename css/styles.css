@@ -681,8 +681,8 @@ img {
   justify-content: center;
   fill: transparent;
   background-color: var(--color-active);
-  border: none;
-  fill: var(--color-bottom);
+  /*border: none;
+  fill: var(--color-bottom);*/
   margin-right: 8px;
 }
 
