@@ -686,6 +686,11 @@ img {
   margin-right: 8px;
 }
 
+.span-chek:checked {
+  border: none;
+  fill: var(--color-bottom);
+}
+
 .chek-svg {
 }
 
