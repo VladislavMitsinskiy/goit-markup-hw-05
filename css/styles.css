@@ -686,7 +686,7 @@ img {
   margin-right: 8px;
 }
 
-.chek-chek:checked + .span-chek {
+.chek-chek:checked + .us-privacy .span-chek {
   border: none;
   fill: var(--color-bottom);
 }
