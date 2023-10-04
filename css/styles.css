@@ -686,7 +686,7 @@ img {
   margin-right: 8px;
 }
 
-.span-chek {
+.span-chek:checked {
   border: none;
   fill: var(--color-bottom);
 }
