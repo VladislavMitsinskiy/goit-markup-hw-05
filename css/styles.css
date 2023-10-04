@@ -656,3 +656,14 @@ img {
 .textarea-modal:focus {
   border-color: var(--color-logo);
 }
+
+.chek-modal {
+  margin-bottom: 24px;
+}
+
+.us-privacy {
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 0.04em;
+  color: var(--color-modal);
+}
