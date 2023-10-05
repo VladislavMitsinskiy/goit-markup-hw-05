@@ -101,7 +101,7 @@ img {
 }
 
 .nav-link {
-  color: var(--color-connection);
+  color: var(--color-back);
   font-size: 16px;
   font-weight: 500;
   line-height: 24px;
@@ -112,7 +112,7 @@ img {
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.nav-link::after {
+.current::after {
   content: "";
   position: absolute;
   left: 0;
@@ -121,6 +121,10 @@ img {
   background-color: var(--color-connection);
   border-radius: 2px;
   width: 100%;
+}
+
+.current {
+  color: var(--color-connection);
 }
 
 .nav-link:hover,
@@ -535,6 +539,15 @@ img {
   background-color: rgba(46, 47, 66, 0.4);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.is-open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
 }
 
 .div-modalwin {
@@ -624,13 +637,17 @@ img {
   fill: var(--color-logo);
 }
 
+.modal-input:focus + .svg-modal {
+  border-color: var(--color-logo);
+  fill: var(--color-logo);
+}
+
 .svg-modal {
   position: absolute;
   left: 16px;
   top: 50%;
   transform: translateY(-50%);
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  fill: var(--color-logo);
 }
 
 .foot-modal {
@@ -680,15 +697,14 @@ img {
   align-items: center;
   justify-content: center;
   fill: transparent;
-  background-color: var(--color-active);
-  /*border: none;
-  fill: var(--color-bottom);*/
+  background-color: transparent;
   margin-right: 8px;
 }
 
 .chek-chek:checked + .us-privacy .span-chek {
   border: none;
   fill: var(--color-bottom);
+  background-color: var(--color-active);
 }
 
 .chek-svg {
